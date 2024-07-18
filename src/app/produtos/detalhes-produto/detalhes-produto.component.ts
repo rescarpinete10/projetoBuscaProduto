@@ -40,41 +40,12 @@ export class DetalhesProdutoComponent implements OnInit {
 
 
   zoom: number = 18;
-  
-  // initial center position for the map
-  lat: number = -23.529202 
-  lng: number = -47.134732;
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
-  }
-  
-  mapClicked($event: MouseEvent) {
-    this.markers.push({
-      lat: $event.coords.lat,
-      lng: $event.coords.lng,
-      draggable: true
-    });
-  }
-  
-  markerDragEnd(m: marker, $event: MouseEvent) {
-    console.log('dragEnd', m, $event);
-  }
-  
-  markers: marker[] = [
-	  {
-		  lat: -23.529202,
-		  lng: -47.134732,
-		  label: 'A',
-		  draggable: true
-	  }
-  ]  
+  } 
+ 
 
 }
 
-interface marker {
-	lat: number;
-	lng: number;
-	label?: string;
-	draggable: boolean;
-}
+

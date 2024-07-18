@@ -18,21 +18,19 @@
     </div>
     <div>
         <agm-map 
-        [latitude]="lat"
-        [longitude]="lng"
+        [latitude]="produto?.lat"
+        [longitude]="produto?.log"
         [zoom]="zoom"
         [disableDefaultUI]="false"
         [zoomControl]="false">
       
-        <agm-marker 
-            *ngFor="let m of markers; let i = index"
-            [latitude]="m.lat"
-            [longitude]="m.lng"
-            [markerDraggable]="m.draggable"
-            (dragEnd)="markerDragEnd(m, $event)">
+        <agm-marker             
+            [latitude]="produto?.lat" 
+            [longitude]="produto?.log"            
+         >
             
-          <agm-info-window>
-            <strong>Loja Sapato</strong>
+          <agm-info-window [isOpen]="true">
+            <strong>R$ {{ produto?.preco }}</strong>
           </agm-info-window>
           
         </agm-marker>
