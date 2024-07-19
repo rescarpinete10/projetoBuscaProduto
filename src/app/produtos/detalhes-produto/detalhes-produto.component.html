@@ -3,8 +3,7 @@
         <img [src]="produto?.imagem" alt="">
     </div>
     <div class="product-description__container">
-        <h2 class="product__name">{{ produto?.descricao }}</h2>
-        <h3 class="product__price">{{ produto?.preco | currency: "BRL"}}</h3>
+        <h2 class="product__name">{{ produto?.descricao }}</h2>        
         <p>Estoque disponível:</p>
         <label for="">
             Quantidade:
@@ -16,21 +15,19 @@
         </p>
 <!--        <button (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>-->
     </div>
-    <div>
+    <div >
         <agm-map 
-        [latitude]="produto?.lat"
-        [longitude]="produto?.log"
+
         [zoom]="zoom"
         [disableDefaultUI]="false"
         [zoomControl]="false">
       
-        <agm-marker             
-            [latitude]="produto?.lat" 
-            [longitude]="produto?.log"            
-         >
+        <agm-marker *ngFor="let produtoCliente of produtosClientes"            
+            [latitude]="produtoCliente?.lat" 
+            [longitude]="produtoCliente?.log">
             
-          <agm-info-window [isOpen]="true">
-            <strong>R$ {{ produto?.preco }}</strong>
+          <agm-info-window [isOpen]="true" >
+            <strong>R$ {{ produtoCliente?.preco }}</strong>
           </agm-info-window>
           
         </agm-marker>

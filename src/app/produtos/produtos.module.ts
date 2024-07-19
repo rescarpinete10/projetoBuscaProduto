@@ -6,6 +6,7 @@ import { ProdutosComponent } from './produtos.component';
 import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AgmCoreModule } from '@agm/core';
     CommonModule,
     ProdutosRoutingModule,
     FormsModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'}),
   ]
 })

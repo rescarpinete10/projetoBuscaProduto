@@ -22,7 +22,7 @@ export class CarrinhoComponent {
   }
 
   calculaTotal() {
-    this.total = this.itensCarrinho.reduce((prev, curr) => prev + (curr.preco * curr.quantidade), 0)
+ //   this.total = this.itensCarrinho.reduce((prev, curr) => prev + (curr.preco * curr.quantidade), 0)
   }
 
   removerProdutoCarrinho(produtoId: number) {
