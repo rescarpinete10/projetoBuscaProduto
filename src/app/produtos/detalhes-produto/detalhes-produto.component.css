@@ -73,7 +73,7 @@ button:hover {
 agm-map {
     height: 500px;
     width: 600px;
-    position: relative;
+    position: unset;
     left: -300px;
   }
   
