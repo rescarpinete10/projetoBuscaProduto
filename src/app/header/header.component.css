@@ -2,22 +2,21 @@
     padding: 10px 0px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     align-items: center;
     column-gap: 40px;
 }
 
-.main-header__title {    
-    font-size: 92px;
-    letter-spacing: -1.5px;    
+.main-header__logo {
+    max-width: 400px; /* Largura máxima do logo */
+    max-height: 70px; /* Altura máxima do logo */
+    width: auto; /* Mantém a proporção do logo */
+    height: auto; /* Mantém a proporção do logo */
 }
 
-.main-header__title--blue {
-    color: var(--blue);
-}
-
-.main-header__title--orange {
-    color: var(--orange);
+.main-header__menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .main-header__menu ul {
