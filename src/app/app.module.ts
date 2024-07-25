@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { FormsModule } from '@angular/forms';
 import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component'
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,6 +27,7 @@ import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.componen
     BrowserAnimationsModule,
     MatSnackBarModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
