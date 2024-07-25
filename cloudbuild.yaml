@@ -9,3 +9,5 @@ steps:
 "--region","us-east-4","--platform","managed","--memory","128Mi"]
 images:
   - "gcr.io/loja-virtual-angular/angular15-application"
+options:
+  defaultLogsBucketBehavior: "REGIONAL_USER_OWNED_BUCKET"
