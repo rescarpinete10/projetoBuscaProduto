@@ -1,24 +1,11 @@
 steps:
-- name: "gcr.io/cloud-builders/docker"
-args: ["build", "-t", "gcr.io/loja-virtual-angular/angular15-application", "."]
-- name: "gcr.io/cloud-builders/docker"
-args: ["push", "gcr.io/loja-virtual-angular/angular15-application"]
-- name: "gcr.io/cloud-builders/gcloud"
-args:
-[
-"beta",
-"run",
-"deploy",
-"--allow-unauthenticated",
-"loja-virtual-angular",
-"--image",
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/loja-virtual-angular/angular15-application", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/loja-virtual-angular/angular15-application"]
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:  ["beta","run","deploy","--allow-unauthenticated","loja-virtual-angular","--image",
 "gcr.io/loja-virtual-angular/angular15-application",
-"--region",
-"us-central1",
-"--platform",
-"managed",
-"--memory",
-"128Mi"
-]
-images:
-- "gcr.io/loja-virtual-angular/angular15-application"
+"--region","us-central1","--platform","managed","--memory","128Mi"]
+    images:
+  - "gcr.io/loja-virtual-angular/angular15-application"
