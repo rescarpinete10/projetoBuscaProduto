@@ -6,7 +6,7 @@ steps:
   - name: "gcr.io/cloud-builders/gcloud"
     args:  ["beta","run","deploy","--allow-unauthenticated","loja-virtual-angular","--image",
 "gcr.io/loja-virtual-angular/angular15-application",
-"--region","us-east4","--platform","managed","--memory","128Mi"]
+"--region","southamerica-east1","--platform","managed","--memory","128Mi"]
 images:
   - "gcr.io/loja-virtual-angular/angular15-application"
 options:
