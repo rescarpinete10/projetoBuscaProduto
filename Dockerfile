@@ -4,7 +4,7 @@
 FROM node as builder
 COPY package.json package-lock.json ./
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-RUN npm ci --force or --legacy-peer-deps && mkdir /ng-app && mv ./node_modules ./ng-app
+RUN npm ci --force or --legacy-peer-deps && mkdir  -p /ng-app/dist && mv ./node_modules ./ng-app
 WORKDIR /ng-app
 COPY . .
 ## Build the angular app in production mode and store the artifacts in dist folder
