@@ -13,7 +13,7 @@
     box-sizing: border-box;
     padding: 10px;
     border-radius: 4px;
-    flex: 0 1 270px;
+    flex: 0 1 190px;
     height: 270px;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
@@ -35,7 +35,7 @@
 
 .product-list__card img {
     height: 170px;
-    width: 170px;    
+    width: 160px;    
     display: block;
     border-radius: 4px;
 }
