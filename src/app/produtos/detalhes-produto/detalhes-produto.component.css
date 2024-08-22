@@ -71,23 +71,23 @@ button:hover {
     filter: brightness(1.3);
 }
 
-google-map{
-    display: flex;
-}
-
-agm-map {
+google-map, agm-map {
     display: flex;
     height: 300px;
     width: 400px;
     position: unset;
     left: -300px;
   }
+
   
+agm-map {
+    left: unset;
+}
   
-  * {
+* {
     font-family: Lato;
-  }
-  
-  a {
+}
+
+a {
     color: darkblue;
-  }
+}
