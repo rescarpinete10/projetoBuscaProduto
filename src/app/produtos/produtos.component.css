@@ -1,7 +1,7 @@
 .product-list {
     padding: 40px 0;
     width: fit-content;    
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr); /* 4 colunas para os produtos */;
     gap: 20px;
     flex-flow: row wrap;  
