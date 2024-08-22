@@ -20,6 +20,10 @@ export class ProdutosService {
     return this.produtos;
   }
 
+  getAllProdutosClientes() {
+    return this.produtosCLiente;
+  }
+
   getOne(produtoId: number) {
     return this.produtos.find(produto => produto.id === produtoId);
   }

@@ -8,8 +8,28 @@
             <p class="product-item__price-description">
                 {{ produto.descricaoPreco }}
             </p>
-<!--            <button class="product-item__buy-button" type="button">Comprar</button>-->            
+       
         </a>  
+    </div>
+    <div >
+        <agm-map 
+
+        [zoom]="zoom"
+        [disableDefaultUI]="false"
+        [zoomControl]="false">
+      
+        <agm-marker *ngFor="let produtoCliente of produtosClientes"            
+            [latitude]="produtoCliente?.lat" 
+            [longitude]="produtoCliente?.log">
+            
+          <agm-info-window [isOpen]="true" >
+            <strong>R$ {{ produtoCliente?.preco }}</strong>
+          </agm-info-window>
+          
+        </agm-marker>
+        
+          
+      </agm-map>   
     </div>
  
 </section>

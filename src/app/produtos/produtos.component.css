@@ -70,8 +70,14 @@
     cursor: pointer;
 }
 
+
+
 agm-map {
-    height: 300px;
+    display: flex;
+    height: 500px;
+    width: 600px;
+    position: unset;
+    left: -300px;
   }
   
   

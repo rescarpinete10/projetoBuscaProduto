@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduto, produtos } from '../produtos';
 import { ProdutosService } from '../produtos.service';
+import { IProdutoCliente } from 'src/app/produtoCliente';
 
 @Component({
   selector: 'app-produtos',
@@ -11,6 +12,8 @@ import { ProdutosService } from '../produtos.service';
 export class ProdutosComponent implements OnInit {
 
    produtos: IProduto[] | undefined;
+   produto: IProduto | undefined;
+   produtosClientes: IProdutoCliente[] |  undefined;
 
   constructor(
     private produtosService: ProdutosService,
@@ -32,7 +35,15 @@ export class ProdutosComponent implements OnInit {
         console.log(data);
       });
 
+      this.produtosClientes = this.produtosService.getAllProdutosClientes();
+
    });
   }
+  zoom: number = 13;
+
+  clickedMarker(label: string, index: number) {
+    console.log(`clicked the marker: ${label || index}`)
+  } 
+
 }
 
