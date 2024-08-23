@@ -29,25 +29,33 @@
     display: flex;
     flex-direction: column;    
     align-items: center;
-    row-gap: 10px; 
+    row-gap: 1px;
     text-decoration: none;
 }
 
 .product-list__card img {
     height: 170px;
-    width: 160px;    
+    width: 160px;
     display: block;
     border-radius: 4px;
 }
 
 .product-item__name {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--blue);
+    text-align: center;
+}
+
+* {
+    font-size: 10px;
+    color: var(--blue);
+    font-family: Helvetica;
+    text-align: center;
 }
 
 .product-item__price {
     color: var(--orange);
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -81,9 +89,7 @@ agm-map {
   }
   
   
-  * {
-    font-family: Lato;
-  }
+
   
   a {
     color: darkblue;

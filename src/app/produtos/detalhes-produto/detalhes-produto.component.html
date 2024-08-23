@@ -27,7 +27,9 @@
             [longitude]="produtoCliente?.log">
             
           <agm-info-window [isOpen]="true" >
+            <div class="info-window"></div>
             <strong>R$ {{ produtoCliente?.preco }}</strong>
+          
           </agm-info-window>
           
         </agm-marker>
@@ -36,3 +38,4 @@
       </agm-map>   
     </div>
 </section>
+
