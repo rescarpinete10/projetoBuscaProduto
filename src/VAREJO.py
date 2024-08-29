@@ -1,21 +1,29 @@
-# Faz uma requisição POST para a página de busca com o ramo de atividade selecionado
-data = {"RAMO ATIVIDADE": 'LOJA DE ROUPAS FEMININAS'}
-headers = {"Content-Type": "application/x-www-form-urlencoded"}
-response = requests.post(url, data=data, headers=headers)
+import os
 
-# Parseia o HTML com Beautiful Soup
-soup = BeautifulSoup(response.content, "lxml")
 
-# Encontra a tabela com os dados dos lojistas
-table = soup.find("table", {"class": "table-striped"})
+def create_combined_file(
+    folder_path, output_file, extensions=(".css", ".html", ".ts", ".js")
+):
+    with open(output_file, "w", encoding="utf-8") as outfile:
+        for root, dirs, files in os.walk(folder_path):
+            for file in files:
+                if file.endswith(extensions):
+                    file_path = os.path.join(root, file)
+                    try:
+                        with open(file_path, "r", encoding="utf-8") as infile:
+                            outfile.write(
+                                f"Caminho completo: {file_path}\nConteúdo:\n{infile.read()}\n\n"
+                            )
+                    except UnicodeDecodeError:
+                        outfile.write(
+                            f"Arquivo: {file}\nNão foi possível ler o conteúdo (provavelmente um arquivo binário).\n\n"
+                        )
 
-# Itera sobre as linhas da tabela
-for row in table.find_all("tr")[1:]:  # Ignora a linha de cabeçalho
-    cols = row.find_all("td")
-    lojista = {
-        "nome": cols[0].text.strip(),
-        "endereco": cols[1].text.strip(),
-        "telefone": cols[2].text.strip(),
-        # Adicione mais campos aqui se necessário
-    }
-    lojistas[ramo_atividade].append(lojista)
+
+# Definindo os caminhos e extensões
+folder_path = "d:\\zoone\\projetobuscaproduto"
+output_file = "d:\\zoone\\todosArquivosCssTsHtmlJs-02.txt"
+extensions = (".css", ".html", ".ts", ".js")
+
+# Chamando a função
+create_combined_file(folder_path, output_file, extensions)

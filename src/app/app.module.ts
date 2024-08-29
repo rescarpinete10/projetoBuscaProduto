@@ -11,6 +11,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { FormsModule } from '@angular/forms';
 import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component'
 import { HttpClientModule } from '@angular/common/http';
+import { CadastroVarejistaComponent } from './cadastro-varejista/cadastro-varejista.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     NaoEncontradaComponent,
-    BarraPesquisaComponent
+    BarraPesquisaComponent,
+    CadastroVarejistaComponent
   ],
   imports: [
     BrowserModule,

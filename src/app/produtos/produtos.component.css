@@ -51,6 +51,7 @@
     color: var(--blue);
     font-family: Helvetica;
     text-align: center;
+    background-color: transparent;
 }
 
 .product-item__price {
@@ -79,13 +80,12 @@
 }
 
 
-
 agm-map {
-    display: flex;
+    display:flex;
     height: 300px;
     width: 400px;
     position: unset;
-    left: -300px;
+    left: -200px;
   }
   
   

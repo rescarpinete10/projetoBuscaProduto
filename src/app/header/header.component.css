@@ -3,7 +3,8 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 50px;
+    margin-top: 1px%;
 }
 
 .main-header__logo {
@@ -17,11 +18,13 @@
     display: flex;
     justify-content: flex-end;
     flex: 1;
+    margin-right: 0;
 }
 
 .main-header__menu ul {
     display: flex;
     justify-content: flex-end;
+    margin-left: 0;
 }
 
 .main-header__menu a {
@@ -31,6 +34,7 @@
     font-size: 22px;
     text-decoration: none;
     transition: all .3s ease-in-out;
+    /* background-color: ##34c8ff;*/
 }
 
 .main-header__menu a:hover {
@@ -43,6 +47,7 @@
     flex-direction: column;
     row-gap: 20px;
     flex: 1;
+    /*background-color: #01baff;*/
 }
 
 .badge-carrinho {
@@ -50,4 +55,15 @@
     padding: 5px 10px;    
     border-radius: 4px;
     color: white;
+}
+
+.search-location-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+#userLocation {
+  font-size: 16px;
+  color: #fff; /* Or desired color */
 }

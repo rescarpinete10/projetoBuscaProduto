@@ -1,6 +1,9 @@
 .search-form {
     height: 44px;  
+    width: 50%;
     display: flex;  
+    margin-left: 10%;
+
 }
 
 .search-form input {    
@@ -13,6 +16,7 @@
     border: none;
     transition: all .3s ease-in-out;
     font-size: 22px;
+    width: 250px;
 }
 
 .search-form input:focus {
@@ -28,4 +32,17 @@
     border: none;
     color: #fff;
     font-size: 22px;
+}
+
+.search-form label {
+    font-size: 22px;
+    color: white;
+    font-style: normal;
+    margin-right: 5%;
+    text-wrap: nowrap;
+    @media (max-height:880px) and (max-width:1279px){
+  #Fonte{
+     font-size: 10vh !important;
+  }
+}
 }

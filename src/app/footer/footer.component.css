@@ -1,23 +1,24 @@
 .footer {
-    background-color: var(--light-gray);        
-    color: var(--gray);
+    background-image: linear-gradient( white 0% , #01baff 100%, white 0%);
+    /* color: var(--gray); */
     font-size: 18px;
+    
 }
 
 .footer__container {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    padding: 20px;
+    padding: 50px;
 }
 
 .footer__copyright {
     text-align: center;
-    margin-top: 20px;
-    background-color: var(--light-gray-2);    
+    margin-top: 10px;
+    /* background-color: var(--light-gray-2);    */
     font-weight: bold;
-    padding: 20px;
-    color: var(--gray);
+    padding: 10px;
+    /* color: var(--gray); */
 }
 
 .footer__title {

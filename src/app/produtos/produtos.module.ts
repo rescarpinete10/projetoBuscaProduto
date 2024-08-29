@@ -18,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProdutosRoutingModule,
     FormsModule,
     HttpClientModule,
-    AgmCoreModule.forRoot({apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'}),
+    AgmCoreModule.forRoot({apiKey: 'AIzaSyDDVcKL3P4TgXXpg5PCD8wObhHX8LeXIs0'}),
   ]
 })
 export class ProdutosModule { }
