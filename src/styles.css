@@ -69,7 +69,7 @@ table {
     --gray: rgba(88, 89, 91, 1);
     --light-gray: rgba(232, 232, 232, 1);    
     --light-gray-2: rgb(247, 247, 247);
-	
+	background-image: linear-gradient(to bottom, #01baff 10% , white 90%, #01baff 5%);
 }
 
 input, textarea, select {
@@ -100,3 +100,5 @@ textarea {
 .invalid:focus {
 	border-color: red;
 }
+html, body { height: 100%; }
+body { margin: 0;	font-family: Roboto, "Helvetica Neue", sans-serif; }

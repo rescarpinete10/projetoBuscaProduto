@@ -1,5 +1,5 @@
 .footer {
-    background-image: linear-gradient( white 0% , #01baff 100%, white 0%);
+    /*background-image: linear-gradient(to top, white 15% , #01baff 70%, white 15%);*/
     /* color: var(--gray); */
     font-size: 18px;
     
@@ -14,10 +14,10 @@
 
 .footer__copyright {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     /* background-color: var(--light-gray-2);    */
     font-weight: bold;
-    padding: 10px;
+    padding: 20px;
     /* color: var(--gray); */
 }
 
