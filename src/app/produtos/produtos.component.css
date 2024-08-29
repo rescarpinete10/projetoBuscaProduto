@@ -81,7 +81,7 @@
 
 
 agm-map {
-    display: flex;
+    display:flex;
     height: 300px;
     width: 400px;
     position: unset;
