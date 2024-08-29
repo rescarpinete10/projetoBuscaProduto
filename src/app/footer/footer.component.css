@@ -1,7 +1,8 @@
 .footer {
-    background-color: var(--light-gray);        
-    color: var(--gray);
+    /*background-image: linear-gradient(to top, white 15% , #01baff 70%, white 15%);*/
+    /* color: var(--gray); */
     font-size: 18px;
+    
 }
 
 .footer__container {
@@ -14,10 +15,10 @@
 .footer__copyright {
     text-align: center;
     margin-top: 20px;
-    background-color: var(--light-gray-2);    
+    /* background-color: var(--light-gray-2);    */
     font-weight: bold;
     padding: 20px;
-    color: var(--gray);
+    /* color: var(--gray); */
 }
 
 .footer__title {
@@ -35,6 +36,10 @@
 
 .footer i {
     color: var(--orange);
+}
+
+.footer li {
+    margin: 10px 0;
 }
 
 .footer li {
