@@ -17,7 +17,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	margin:auto;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -58,6 +58,7 @@ table {
     --gray: rgba(88, 89, 91, 1);
     --light-gray: rgba(232, 232, 232, 1);    
     --light-gray-2: rgb(247, 247, 247);
+	background-image: linear-gradient(to bottom, #01baff 10% , white 90%, #01baff 5%);
 }
 
 input, textarea, select {
@@ -89,4 +90,4 @@ textarea {
 	border-color: red;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0;	font-family: Roboto, "Helvetica Neue", sans-serif; }
